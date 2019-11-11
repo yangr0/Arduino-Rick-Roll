@@ -8,4 +8,4 @@
 
 - Arduino Software
 
-- HID Master
+- [HID Master](https://github.com/NicoHood/HID)
