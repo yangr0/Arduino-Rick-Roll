@@ -1,6 +1,6 @@
 # Arduino-Rick-Roll
 
-[Rick Roll with Arduino]
+[ Rick Roll with Arduino ]
 
 # Requirements
 
