@@ -1,26 +1,20 @@
+// Dependencies
 #include <HID-Project.h>
 #include <HID-Settings.h>
 
-void typeKey(int key){
-  Keyboard.press(key);
-  delay(50);
-  Keyboard.release(key);
-}
-
-void setup()
+// Main
+void main()
 {
-  AbsoluteMouse.begin();
-  Keyboard.begin();
+  Keyboard.begin(); // Start Keyboard
   delay(3000);
-  Keyboard.press(KEY_LEFT_GUI);
-  Keyboard.press(114);
-  Keyboard.press(KEY_RETURN);
-  Keyboard.releaseAll();
-  delay(1000);
-  Keyboard.print("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-  Keyboard.press(KEY_RETURN);
-  Keyboard.end();
-  AbsoluteMouse.end();
+  Keyboard.press(KEY_LEFT_GUI); // "Windows" Key
+  Keyboard.press(114); // Pressing the "r" Key
+  Keyboard.press(KEY_RETURN); // "Enter" Key
+  Keyboard.releaseAll(); // Let Go of All Keys
+  delay(1000); // Waits 1000 Milliseconds
+  Keyboard.print("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); // Link to Video
+  Keyboard.press(KEY_RETURN); // "Enter" Key
+  Keyboard.end(); // Stop Keyboard
 }
 
-void loop() {}
+void loop() {} // Unused
